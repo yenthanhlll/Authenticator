@@ -1,0 +1,4 @@
+1. *.ttk, *.txt files upload
+2. If the upload succeeds, files are automatically deleted.
+3. If the upload failed, check or delete the file and re-upload it.
+4. Do not change the extension of the readme file.

@@ -1,0 +1,570 @@
+@CHARSET "UTF-8";
+
+/**
+ 	form help-block custom (ALTE)
+*/
+.help-block {
+	font-size : 11px;
+	padding-left: 4px;
+}
+/**
+ 	tooltip custom (Bootstrap)
+*/
+.tooltip-inner {
+	max-width:400px;
+}
+
+.tooltip-inner > p {
+	margin: 5px 3px;
+	text-align: left;
+}
+
+.tooltip-inner > ul {
+	padding-left: 20px;
+}
+
+.tooltip-inner > ul > li {
+	text-align: left;
+}
+
+/**
+ 	main-header custom (ALTE)
+*/
+
+.navbar-nav > .messages-menu.help-menu > .dropdown-menu {
+	width: 512px;
+}
+
+.main-header .navbar .nav > li.user > a > .moon,
+.content-header > .breadcrumb > li > a > .moon{
+  margin-right: 5px;
+}
+
+.navbar-nav > .user-menu > .dropdown-menu > li.user-header > ul {
+  z-index: 5;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  margin-top: 40px;
+  text-align: left;
+  list-style: none;
+  padding-left: 10px;
+}
+
+
+/**
+ 	user-panel custom (ALTE)
+*/
+.user-panel > .image {
+	padding: 10px 5px 5px 5px;	
+}
+
+.user-panel > .info {
+	padding: 10px 5px 5px 5px;	
+}
+
+
+/**
+ 	ICON CSS CUSTOM TO FIT (ALTE)
+*/
+
+
+.user-panel > .image > span > .moon,
+.user-panel > .image > span > .ion,
+.user-panel > .image > span > .fa,
+.user-panel > .image > span > .glyphicon {
+  font-size: 24px;
+}
+
+.user-panel > .info > a > .moon {
+  margin-right: 3px;
+}
+
+.sidebar-menu > li > a > .moon,
+.sidebar-menu .treeview-menu > li > a > .moon,
+.sidebar-menu > li > a > .ion,
+.sidebar-menu .treeview-menu > li > a > .ion  {
+  width: 20px;
+  font-size: 18px;
+}
+
+.dropdown-menu > li > a > .moon {
+  margin-right: 10px;
+}
+
+.navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a > .moon {
+  width: 20px;
+}
+
+.box-header > .moon {
+	display: inline-block;
+  font-size: 18px;
+  margin: 0;
+  line-height: 1;
+  margin-right: 5px;
+}
+
+.todo-list > li .tools > .moon {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.btn-app > .moon {
+  font-size: 20px;
+  display: block;
+}
+
+.nav-pills > li > a > .moon {
+  margin-right: 5px;
+}
+
+.nav-tabs-custom > .nav-tabs > li.header > .moon {
+  margin-right: 5px;
+}
+
+/*** ////////  ERROR PAGE   ////////  ***/
+.layout-error {
+	background: rgba(211, 211, 211, 0.7);
+}
+
+.layout-error > .container {
+	width: 750px;
+}
+
+.layout-error .jumbotron {
+	text-align: center;
+}
+
+.layout-error .jumbotron h1 {
+	font-size: 42px;
+}
+
+.layout-error .jumbotron i.fa {
+	font-size: 120px;
+}
+.layout-error .jumbotron p.error-rtn {
+	text-align: right;
+    padding-right: 30px;
+    margin-top: 50px;
+    font-size: 18px;
+}
+.btn, .input-group-sm>.form-control, .input-group-sm>.input-group-addon, .input-group-sm>.input-group-btn>.btn { 
+	border-radius : 0;
+}
+
+.box.mmth-details-box .footer {
+	border-top : 0;
+}
+.modal-footer .btn+.btn {
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.pagination-sm>li:first-child>a, .pagination-sm>li:first-child>span {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}.pagination-sm>li:last-child>a, .pagination-sm>li:last-child>span {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.bootstrap-dialog .modal-header {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+/*////////////////////////////////////////////////////*/
+/*////////////////////SKIN-COLORING///////////////////*/
+/*////////////////////////////////////////////////////*/
+
+/*************skin-blue : #3c8dbc*****************/
+body.skin-blue .modal .modal-header.mmth-popup {
+	background: #3c8dbc;
+	color: #fff;
+}
+body.skin-blue .box.mmth-box {
+	border-top-color: #3c8dbc;
+}
+body.skin-blue .box.mmth-box-light {
+	border-top-color: #7EC6EF;
+}
+body.skin-blue .box.box-solid.mmth-box > .box-header {
+  color: #ffffff;
+  background: #3c8dbc;
+  background-color: #3c8dbc;
+}
+body.skin-blue .box.box-solid.mmth-box > .box-header a,
+body.skin-blue .box.box-solid.mmth-box > .box-header .btn {
+  color: #ffffff;
+}
+
+body.skin-blue .box.box-solid.mmth-box-light > .box-header {
+  color: #ffffff;
+  background: #7EC6EF;
+  background-color: #7EC6EF;
+}
+body.skin-blue .box.box-solid.mmth-box-light > .box-header a,
+body.skin-blue .box.box-solid.mmth-box-light > .box-header .btn {
+  color: #ffffff;
+}
+
+
+body.skin-blue .nav-stacked.mmth-nav>li.active>a, 
+body.skin-blue .nav-stacked.mmth-nav>li.active>a:hover {
+	border-left-color: #3c8dbc;
+}
+body.skin-blue .nav-stacked.mmth-nav>li.active>a i, 
+body.skin-blue .nav-stacked.mmth-nav>li.active>a:hover i {
+	/* 	active 일때 아이콘 색	*/
+	color :#3c8dbc;
+}
+
+body.skin-blue .nav-stacked.mmth-nav-light>li.active>a, 
+body.skin-blue .nav-stacked.mmth-nav-light>li.active>a:hover {
+	border-left-color: #7EC6EF;
+}
+
+body.skin-blue .nav-stacked.mmth-nav-light>li.active>a i, 
+body.skin-blue .nav-stacked.mmth-nav-light>li.active>a:hover i { 
+	/* 	active 일때 아이콘 색	*/
+	color :#7EC6EF;
+}
+
+body.skin-blue .mmth-bg {
+	background-color :#3c8dbc !important;
+}
+body.skin-blue .mmth-bg-light {
+	background-color :#7EC6EF !important;
+}
+body.skin-blue .btn.btn-primary.mmth-btn {
+	background-color :#3c8dbc !important;
+	border: 1px solid #3c8dbc !important;
+}
+body.skin-blue .btn.btn-info.mmth-btn {
+	background-color :#7EC6EF !important;
+	border: 1px solid  #7EC6EF !important;
+}
+body.skin-blue .mmth-color {
+	color :#3c8dbc !important;
+}
+body.skin-blue .mmth-color-light {
+	color :#7EC6EF !important;
+}
+
+body.skin-blue .mmth-filter-btn {
+	background: #265282 !important;
+	color: #fff !important;
+} 
+
+body.skin-blue .mmth-policy-btn {
+	background: #00bcd4 !important;
+	border-color: #00bcd4 !important;
+	color: #fff !important;
+} 
+
+body.skin-blue .pagination>.active>a, 
+body.skin-blue .pagination>.active>a:focus, 
+body.skin-blue .pagination>.active>a:hover, 
+body.skin-blue .pagination>.active>span, 
+body.skin-blue .pagination>.active>span:focus, 
+body.skin-blue .pagination>.active>span:hover {
+    background-color: #3c8dbc;
+    border-color: #3c8dbc;
+}
+/*************skin-green : #00A65A*****************/
+body.skin-green .modal .modal-header.mmth-popup {
+	background: #00A65A;
+	color: #fff;
+}
+body.skin-green .box.mmth-box {
+	border-top-color: #00A65A;
+}
+body.skin-green .box.mmth-box-light {
+	border-top-color: #8bc34a;
+}
+body.skin-green .box.mmth-box-reverse {
+	border-top-color: #8bc34a;
+}
+body.skin-green .box.box-solid.mmth-box > .box-header {
+  color: #ffffff;
+  background: #00A65A;
+  background-color: #00A65A;
+}
+body.skin-green .box.box-solid.mmth-box > .box-header a,
+body.skin-green .box.box-solid.mmth-box > .box-header .btn {
+  color: #ffffff;
+}
+
+body.skin-green .box.box-solid.mmth-box-light > .box-header {
+  color: #ffffff;
+  background: #8bc34a;
+  background-color: #8bc34a;
+}
+body.skin-green .box.box-solid.mmth-box-light > .box-header a,
+body.skin-green .box.box-solid.mmth-box-light > .box-header .btn {
+  color: #ffffff;
+}
+
+
+body.skin-green .nav-stacked.mmth-nav>li.active>a, 
+body.skin-green .nav-stacked.mmth-nav>li.active>a:hover {
+	border-left-color: #00A65A;
+}
+body.skin-green .nav-stacked.mmth-nav>li.active>a i, 
+body.skin-green .nav-stacked.mmth-nav>li.active>a:hover i {
+	/* 	active 일때 아이콘 색	*/
+	color :#00A65A;
+}
+
+body.skin-green .nav-stacked.mmth-nav-light>li.active>a, 
+body.skin-green .nav-stacked.mmth-nav-light>li.active>a:hover {
+	border-left-color: #CDDC39;
+}
+
+body.skin-green .nav-stacked.mmth-nav-light>li.active>a i, 
+body.skin-green .nav-stacked.mmth-nav-light>li.active>a:hover i { 
+	/* 	active 일때 아이콘 색	*/
+	color :#CDDC39 ;
+}
+
+body.skin-green .mmth-bg {
+	background-color :#00A65A !important;
+}
+body.skin-green .mmth-bg-light {
+	background-color :#8bc34a !important;
+}
+body.skin-green .btn.btn-primary.mmth-btn {
+	background-color :#00A65A !important;
+	border:  1px solid #00A65A !important;
+}
+body.skin-green .btn.btn-info.mmth-btn {
+	background-color :#8bc34a !important;
+	border: 1px solid  #8bc34a !important;
+}
+body.skin-green .mmth-color {
+	color :#00A65A !important;
+}
+body.skin-green .mmth-color-light {
+	color :#8bc34a !important;
+}
+
+body.skin-green .mmth-filter-btn {
+	background: #CDDC39 !important;
+	color: #374850 !important;
+} 
+
+body.skin-green .mmth-policy-btn {
+	background: #009688 !important;
+	border-color: #009688 !important;
+	color: #fff !important;
+} 
+
+body.skin-green .pagination>.active>a, 
+body.skin-green .pagination>.active>a:focus, 
+body.skin-green .pagination>.active>a:hover, 
+body.skin-green .pagination>.active>span, 
+body.skin-green .pagination>.active>span:focus, 
+body.skin-green .pagination>.active>span:hover {
+    background-color: #00A65A;
+    border-color: #00A65A;
+}
+/*************skin-purple : #605CA8*****************/
+body.skin-purple .modal .modal-header.mmth-popup {
+	background: #605CA8;
+	color: #fff;
+}
+body.skin-purple .box.mmth-box {
+	border-top-color: #605CA8;
+}
+body.skin-purple .box.mmth-box-light {
+	border-top-color: #9896C7;
+}
+body.skin-purple .box.box-solid.mmth-box > .box-header {
+  color: #ffffff;
+  background: #605CA8;
+  background-color: #605CA8;
+}
+body.skin-purple .box.box-solid.mmth-box > .box-header a,
+body.skin-purple .box.box-solid.mmth-box > .box-header .btn {
+  color: #ffffff;
+}
+
+body.skin-purple .box.box-solid.mmth-box-light > .box-header {
+  color: #ffffff;
+  background: #9896C7;
+  background-color: #9896C7;
+}
+body.skin-purple .box.box-solid.mmth-box-light > .box-header a,
+body.skin-purple .box.box-solid.mmth-box-light > .box-header .btn {
+  color: #ffffff;
+}
+
+
+body.skin-purple .nav-stacked.mmth-nav>li.active>a, 
+body.skin-purple .nav-stacked.mmth-nav>li.active>a:hover {
+	border-left-color: #605CA8;
+}
+body.skin-purple .nav-stacked.mmth-nav>li.active>a i, 
+body.skin-purple .nav-stacked.mmth-nav>li.active>a:hover i {
+	/* 	active 일때 아이콘 색	*/
+	color :#3c8dbc;
+}
+
+body.skin-purple .nav-stacked.mmth-nav-light>li.active>a, 
+body.skin-purple .nav-stacked.mmth-nav-light>li.active>a:hover {
+	border-left-color: #9896C7;
+}
+
+body.skin-purple .nav-stacked.mmth-nav-light>li.active>a i, 
+body.skin-purple .nav-stacked.mmth-nav-light>li.active>a:hover i { 
+	/* 	active 일때 아이콘 색	*/
+	color :#9896C7;
+}
+
+body.skin-purple .mmth-bg {
+	background-color :#605CA8 !important;
+}
+body.skin-purple .mmth-bg-light {
+	background-color :#9896C7 !important;
+}
+body.skin-purple .btn.btn-primary.mmth-btn {
+	background-color :#605CA8 !important;
+	border: 1px solid #605CA8 !important;
+}
+body.skin-purple .btn.btn-info.mmth-btn {
+	background-color :#9896C7 !important;
+	border: 1px solid #9896C7 !important;
+}
+body.skin-purple .btn.btn-info.mmth-bg {
+	background-color :#9896C7 !important;
+	border: #9896C7 !important;
+}
+body.skin-purple .mmth-color {
+	color :#605CA8 !important;
+}
+body.skin-purple .mmth-color-light {
+	color :#9896C7 !important;
+}
+
+body.skin-purple .mmth-filter-btn {
+	background: #9c27b0 !important;
+	color: #fff !important;
+}
+
+body.skin-purple .mmth-policy-btn {
+	background: #3f51b5 !important;
+	border-color: #3f51b5 !important;
+	color: #fff !important;
+} 
+
+body.skin-purple .pagination>.active>a, 
+body.skin-purple .pagination>.active>a:focus, 
+body.skin-purple .pagination>.active>a:hover, 
+body.skin-purple .pagination>.active>span, 
+body.skin-purple .pagination>.active>span:focus, 
+body.skin-purple .pagination>.active>span:hover {
+    background-color: #605CA8;
+    border-color: #605CA8;
+}
+
+/*************skin-black-light : #8ca2ad*****************/
+body.skin-black-light .modal .modal-header.mmth-popup {
+	background: #8ca2ad;
+	color: #fff;
+}
+body.skin-black-light .box.mmth-box {
+	border-top-color: #8ca2ad;
+}
+body.skin-black-light .box.mmth-box-light {
+	border-top-color: #607d8b;
+}
+body.skin-black-light .box.box-solid.mmth-box > .box-header {
+  color: #ffffff;
+  background: #8ca2ad;
+  background-color: #8ca2ad;
+}
+body.skin-black-light .box.box-solid.mmth-box > .box-header a,
+body.skin-black-light .box.box-solid.mmth-box > .box-header .btn {
+  color: #ffffff;
+}
+
+body.skin-black-light .box.box-solid.mmth-box-light > .box-header {
+  color: #ffffff;
+  background: #607d8b;
+  background-color: #607d8b;
+}
+body.skin-black-light .box.box-solid.mmth-box-light > .box-header a,
+body.skin-black-light .box.box-solid.mmth-box-light > .box-header .btn {
+  color: #ffffff;
+}
+
+
+body.skin-black-light .nav-stacked.mmth-nav>li.active>a, 
+body.skin-black-light .nav-stacked.mmth-nav>li.active>a:hover {
+	border-left-color: #8ca2ad;
+}
+body.skin-black-light .nav-stacked.mmth-nav>li.active>a i, 
+body.skin-black-light .nav-stacked.mmth-nav>li.active>a:hover i {
+	/* 	active 일때 아이콘 색	*/
+	color :#3c8dbc;
+}
+
+body.skin-black-light .nav-stacked.mmth-nav-light>li.active>a, 
+body.skin-black-light .nav-stacked.mmth-nav-light>li.active>a:hover {
+	border-left-color: #607d8b;
+}
+
+body.skin-black-light .nav-stacked.mmth-nav-light>li.active>a i, 
+body.skin-black-light .nav-stacked.mmth-nav-light>li.active>a:hover i { 
+	/* 	active 일때 아이콘 색	*/
+	color :#607d8b;
+}
+
+body.skin-black-light .mmth-bg {
+	background-color :#8ca2ad !important;
+}
+body.skin-black-light .mmth-bg-light {
+	background-color :#607d8b !important;
+}
+body.skin-black-light .btn.btn-primary.mmth-btn {
+	background-color :#8ca2ad !important;
+	border: 1px solid  #8ca2ad !important;
+}
+body.skin-black-light .btn.btn-info.mmth-btn {
+	background-color :#607d8b !important;
+	border: 1px solid  #607d8b !important;
+}
+body.skin-black-light .mmth-color {
+	color :#8ca2ad !important;
+}
+body.skin-black-light .mmth-color-light {
+	color :#607d8b !important;
+}
+
+body.skin-black-light .mmth-filter-btn {
+	background: #93c4dc !important;
+	color: #fff !important;
+} 
+
+body.skin-black-light .mmth-policy-btn {
+	background: #607d8b !important;
+	border-color: #607d8b !important;
+	color: #fff !important;
+} 
+
+body.skin-black-light .pagination>.active>a, 
+body.skin-black-light .pagination>.active>a:focus, 
+body.skin-black-light .pagination>.active>a:hover, 
+body.skin-black-light .pagination>.active>span, 
+body.skin-black-light .pagination>.active>span:focus, 
+body.skin-black-light .pagination>.active>span:hover {
+    background-color: #8ca2ad;
+    border-color: #8ca2ad;
+}
+
+.btn.btn-default.mmth-btn {
+	border:  none;
+}
+.radius-10 {
+	border-radius : 10px;
+}

@@ -1,0 +1,68 @@
+<%--
+	//	Tag for Page list and pagination
+
+--%><%@include file="/WEB-INF/tags/include/def.tagf"%><%--
+--%><%@attribute name="titleKeyDetails" required="true" type="java.lang.String"%><%--
+--%><%@attribute name="titleKeyNew" type="java.lang.String"%><%--
+--%><%@attribute name="useForm" type="java.lang.Boolean"%><%--
+--%><%@attribute name="useDelete" type="java.lang.Boolean"%><%--
+--%><%@attribute name="excludeCollapse" type="java.lang.Boolean"%><%--
+--%><%@attribute name="excludeEdit" type="java.lang.Boolean"%><%--
+--%><%@attribute name="excludeFooter" type="java.lang.Boolean"%><%-- 
+--%><%@attribute name="saveBtnId" type="java.lang.String"%><%--
+--%><%@attribute name="deleteTooltipKey" type="java.lang.String"%><%--
+--%><%@attribute name="detailBoxId" type="java.lang.String"%><%--
+--%><%@attribute name="detailBoxFormId" type="java.lang.String"%><%--
+--%><%@attribute name="boxBodyClazzName" type="java.lang.String"%><%--
+--%><div class="box mmth-box-light box-solid mmth-details-box" id="${not empty detailBoxId ? detailBoxId : 'mmth-detailsBox' }" style="display: none;"><%-- 
+	--%><div class="box-header with-border"><%-- 
+		--%><h3 class="box-title"><%-- 
+			--%><span class="titleDetails"><fmt:message key="${titleKeyDetails}"/></span><%-- 
+			--%><c:if test="${not empty titleKeyNew }"><span class="titleNew"><fmt:message key="${titleKeyNew}"/></span></c:if><%-- 
+		--%></h3><%--
+		--%><c:if test="${ empty excludeCollapse or not excludeCollapse}"><%-- 
+		--%><div class="box-tools pull-right"><%-- 
+			--%><button type="button" class="btn btn-box-tool" data-widget="collapse"  data-toggle="tooltip" data-container="body" data-placement="bottom" title="<fmt:message key="btn.close"/>"><%-- 
+				--%><i class="fa fa-times"></i><%-- 
+			--%></button><%-- 
+		--%></div><%-- 
+		--%></c:if><%-- 
+	--%></div><!-- /.box-header --><%-- 
+	--%><c:choose><%-- 
+		--%><c:when test="${not empty useForm and useForm}"><%--
+		--%><form class="form-horizontal" id="${not empty detailBoxFormId ? detailBoxFormId : 'mmth-detailsContext'}"><%-- 
+			--%><div class="box-body"><br/><br/><%-- 
+				--%><jsp:doBody/><%-- 
+				--%><c:if test="${useDelete}"><tag:formItem formField="false" valueKey="btn-detailsDelete" labelKey="common.delete.info" buttonKey="btn.delete" buttonClass="btn-danger" tooltipKey="${deleteTooltipKey }"/></c:if><%-- 
+			--%></div><!-- /.box-body --><%--
+			--%><c:if test="${not excludeFooter}"><%--  
+			--%><div class="box-footer"><%--
+				--%><c:if test="${not excludeCollapse}"><%-- 
+				--%><button type="button" data-widget="collapse" class="btn btn-md btn-default mmth-btn col-md-8 col-sm-7 "><fmt:message key="btn.close"/></button><%--
+				--%></c:if><%--
+				--%><c:if test="${not excludeEdit}"><%--  
+				--%><button type="button" id="btn-detailEdit" class="btn btn-md  btn-info mmth-btn col-md-4 col-sm-5 ${excludeCollapse ? 'col-md-offset-8 col-sm-offset-7' : ''}"><i class="fa fa-pencil-square-o"></i> &nbsp;<fmt:message key="btn.edit"/></button><%--
+				--%></c:if><%--
+				--%><button type="button" id="${not empty saveBtnId ? saveBtnId : 'btn-detailSave'}" class="btn btn-md btn-primary mmth-btn col-md-4 col-sm-5 ${excludeCollapse ? 'col-md-offset-8 col-sm-offset-7' : ''}"><i class="fa fa-save"></i> &nbsp;<fmt:message key="btn.save"/></button><%--
+			--%></div><!-- /.box-footer --><%-- 
+			--%></c:if><%-- 
+		--%></form><%-- 
+		--%></c:when><%-- 
+		--%><c:otherwise><%-- 
+			--%><div class="box-body ${boxBodyClazzName}"><%--
+				--%><br/><jsp:doBody/><br/><%-- 
+			--%></div><%-- 
+			--%><c:if test="${not excludeFooter}"><%--  
+			--%><div class="box-footer"><%--
+				--%><c:if test="${not excludeCollapse}"><%-- 
+				--%><button type="button" data-widget="collapse" class="btn btn-md btn-default mmth-btn col-md-8 col-sm-7 "><fmt:message key="btn.close"/></button><%--
+				--%></c:if><%--
+				--%><c:if test="${not excludeEdit}"><%--  
+				--%><button type="button" id="btn-detailEdit" class="btn btn-md  btn-info mmth-btn col-md-4 col-sm-5 ${excludeCollapse ? 'col-md-offset-8 col-sm-offset-7' : ''}"><i class="fa fa-pencil-square-o"></i> &nbsp;<fmt:message key="btn.edit"/></button><%--
+				--%></c:if><%--
+				--%><button type="button" id="${not empty saveBtnId ? saveBtnId : 'btn-detailSave'}" class="btn btn-md btn-primary mmth-btn col-md-4 col-sm-5 ${excludeCollapse ? 'col-md-offset-8 col-sm-offset-7' : ''}"><i class="fa fa-save"></i> &nbsp;<fmt:message key="btn.save"/></button><%--
+			--%></div><!-- /.box-footer --><%-- 
+			--%></c:if><%-- 
+		--%></c:otherwise><%-- 
+	--%></c:choose><%--
+--%></div><!-- /.box -->

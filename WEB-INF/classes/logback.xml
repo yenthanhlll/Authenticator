@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<configuration scan="true" scanPeriod="30 seconds">
+
+	<property name="LOG_DIR" value="../logs" />
+	<property name="LOG_FILE_NAME" value="MMTH" />
+	<property name="LOG_FILE_NAME_API" value="MMTH_api" />
+    <property name="LOG_PATH_NAME" value="${LOG_DIR}/${LOG_FILE_NAME}.log" />
+    <property name="LOG_PATH_NAME_API" value="${LOG_DIR}/${LOG_FILE_NAME_API}.log" />
+
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+       <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+          <fileNamePattern>${LOG_DIR}/%d{yyyy-MM-dd,aux}/${LOG_FILE_NAME}.%i.log.%d{yyyy-MM-dd}</fileNamePattern> 
+          <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+          	<maxFileSize>10MB</maxFileSize> 
+          </timeBasedFileNamingAndTriggeringPolicy>
+		  <maxHistory>90</maxHistory>
+		  <cleanHistoryOnStart>true</cleanHistoryOnStart>
+       </rollingPolicy> 
+
+       <encoder>
+           <pattern>%d{ISO8601} %-5p [%-6t] [%C{2}.%M:%L] - %msg%n</pattern>
+       </encoder>
+    </appender>
+
+    <appender name="FILE_API" class="ch.qos.logback.core.rolling.RollingFileAppender">
+       <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+          <fileNamePattern>${LOG_DIR}/%d{yyyy-MM-dd,aux}/${LOG_FILE_NAME_API}.%i.log.%d{yyyy-MM-dd}</fileNamePattern> 
+          <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP"> 
+            <maxFileSize>10MB</maxFileSize> 
+          </timeBasedFileNamingAndTriggeringPolicy>
+	      <maxHistory>90</maxHistory>
+	      <cleanHistoryOnStart>true</cleanHistoryOnStart>
+       </rollingPolicy>
+
+       <encoder>
+          <pattern>%d{ISO8601} %-5p [%-6t] [%C{2}.%M:%L] - %msg%n</pattern>
+       </encoder>
+    </appender>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %d{ISO8601} %-5p [%-6t] [%C{2}.%M:%L] - %m%n
+            </pattern>
+        </encoder>
+    </appender>
+    <logger name="org.springframework" additivity="false" level="WARN" >
+        <appender-ref ref="STDOUT" />
+    </logger>
+
+    <logger name="com.dreammirae.mmth" additivity="false" level="INFO" >
+        <appender-ref ref="FILE" />
+        <appender-ref ref="STDOUT" />
+    </logger>
+
+    <logger name="com.dreammirae.mmth.runtime" additivity="false" level="WARN" >
+        <appender-ref ref="FILE" />
+        <appender-ref ref="STDOUT" />
+    </logger>
+
+    <logger name="com.dreammirae.mmth.util" additivity="false" level="WARN" >
+        <appender-ref ref="FILE" />
+        <appender-ref ref="STDOUT" />
+    </logger>
+
+    <logger name="com.dreammirae.mmth.authentication" additivity="false" level="WARN" >
+        <appender-ref ref="FILE" />
+        <appender-ref ref="STDOUT" />
+    </logger>
+
+    <logger name="com.dreammirae.mmth.rp" additivity="false" level="DEBUG" >
+        <appender-ref ref="FILE" />    
+        <appender-ref ref="STDOUT" />
+    </logger>
+
+    <logger name="com.dreammirae.mmth.external" additivity="false" level="INFO" >
+        <appender-ref ref="FILE_API" />
+        <appender-ref ref="STDOUT" />
+    </logger>
+  
+    <!-- turn OFF all logging (children can override) -->
+    <root level="INFO">
+        <!-- <appender-ref ref="STDOUT" /> -->
+        <appender-ref ref="FILE" />
+    </root>
+
+</configuration>

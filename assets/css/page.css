@@ -1,0 +1,283 @@
+@CHARSET "UTF-8";
+/** ////////////////////////////////////////
+
+페이지 레이아웃 스타일 시트 (with bootstrap and adminLTE Theme)
+
+/////////////////////////////////////////// */
+/*IE10 viewport hack for Surface/desktop Windows 8 bug*/
+@-ms-viewport {
+	width: device-width;
+}
+
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 700;
+	src: url(fonts/NanumGothic-Bold.eot);
+	src: url(fonts/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+		url(fonts/NanumGothic-Bold.woff) format('woff'),
+		url(fonts/NanumGothic-Bold.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url(fonts/NanumGothic-Regular.eot);
+	src: url(fonts/NanumGothic-Regular.eot?#iefix)
+		format('embedded-opentype'), url(fonts/NanumGothic-Regular.woff)
+		format('woff'), url(fonts/NanumGothic-Regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 700;
+	src: url(fonts/NanumGothic-Bold.eot);
+	src: url(fonts/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+		url(fonts/NanumGothic-Bold.woff) format('woff'),
+		url(fonts/NanumGothic-Bold.ttf) format('truetype');
+}
+
+body {
+	font-family: 'Nanum Gothic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.bg-white {
+    background-color: #fff;
+    color: #666;
+    border-color: #efefef;
+}
+
+
+
+.mmth-pageList > thead th{
+	text-align: center;
+}
+
+.mmth-pageSearch-field {
+	margin: 20px 0 0 0;
+	border: solid 1px #eee;
+	box-shadow: 1px 1px 1px #eee;
+
+}
+
+.table.mmth-pageSearch-field>thead>tr>td, 
+.table.mmth-pageSearch-field>thead>tr>th {
+	padding: 10px;
+}
+
+.mmth-pageSearch-field  .input-group  input {
+	border: solid 1px #efefef;
+}
+
+.input-group > .mmth-pageSearchFilter-label {
+	background-color: #3C8DBC;
+	color: #fff;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.form-control[data-readonly] {
+	border: none;
+	background: none;
+}
+
+.box-inline-stat .well {
+	margin-bottom: 0;
+	background: none;
+	border: none;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.box-inline-stat .well-sm {
+	padding : 5px;
+}
+
+ol.item-seperator, ul.item-seperator {
+	padding: 0 10px;
+	margin : 0 15px;
+	list-style: none;
+} 
+
+.item-seperator > li+li:before {
+    padding: 0 25px;
+    color: #ccc;
+    content: "\007C";
+}
+.item-seperator > li {
+	display: inline-block;
+}
+
+.item-seperator .label {
+	font-size: 1.05em;
+	margin-left: 5px;
+	border-radius: 15px; 
+}
+.box-header > .search-row {
+	margin-top: 10px;
+}
+
+.word-break {
+	word-break: break-all !important;
+ 	word-wrap: break-word !important;
+}
+#overlay {
+	position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+.checked_square {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    border: none;
+    color: #fff;
+}
+.ackDesc {
+	font-size:12px;
+	color :#999;
+}
+.mmth-pageList.table-bordered>tbody>tr>td, .mmth-latest.table-bordered>tbody>tr>td {
+	vertical-align: middle;
+}
+
+.mmth-summary {
+    position: relative;
+	display: block;
+    min-height: 90px;
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAKUlEQVQYVzWKsQ0AMAzCwsj/v4aRCqV4swG76/mQHDREJF2o5AjbzlIeTHsYpP5tKekAAAAASUVORK5CYII=) repeat;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+.mmth-summary-icon {
+    position: absolute;
+    display: block;
+    float: left;
+    height: 100%;
+    width: 70px;
+    text-align: center;
+    font-size: 25px;
+    padding-top:25px;
+    background: #fff;
+}
+
+hr.summary-delimiter {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0;
+    border-top: 1px dashed #ccc;
+}
+
+.mmth-summary-content {
+    padding: 15px 10px;
+    margin-left: 70px;
+}
+
+.mmth-summary-title {
+    display: block;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color : #666;
+}
+.mmth-summary-value {
+    display: block;
+    font-weight: bold;
+    font-size: 17px;
+    color : #444;
+    margin-bottom: 10px;
+}
+
+.mmth-datalist h3 {
+	margin-top: 5px;
+	color: #444;
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-size: 18px;
+}
+
+.mmth-datalist h3::BEFORE {
+	content:"# ";
+	color: #666;
+}
+
+.mmth-alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+.mmth-alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.mmth-datalist .table th {
+	text-align: center;
+}
+
+body.skin-blue .checked_square {
+	background: url(bg/blue.png) no-repeat;
+	background-position: -48px 0;
+}
+body.skin-green .checked_square {
+	background: url(bg/green.png) no-repeat;
+	background-position: -48px 0;
+}
+body.skin-black-light .checked_square {
+	background: url(bg/black-light.png) no-repeat;
+	background-position: -48px 0;
+}
+body.skin-purple .checked_square {
+	background: url(bg/purple.png) no-repeat;
+	background-position: -48px 0;
+}
+button.checked_square {
+    color: #000;
+}
+body.skin-blue button.checked_square {
+	background: url(bg/blue.png) no-repeat;
+	background-position: 0 0;
+}
+body.skin-green button.checked_square {
+	background: url(bg/green.png) no-repeat;
+	background-position: 0 0;
+}
+body.skin-black-light button.checked_square {
+	background: url(bg/black-light.png) no-repeat;
+	background-position: 0 0;
+}
+body.skin-purple button.checked_square {
+	background: url(bg/purple.png) no-repeat;
+	background-position: 0 0;
+}
+
+body.skin-blue .mmth-summary-icon {
+	color : #3c8dbc !important;
+}
+
+body.skin-green .mmth-summary-icon {
+	color : #00A65A !important;
+}
+
+body.skin-black-light .mmth-summary-icon {
+	color : #607d8b !important;
+}
+
+body.skin-purple .mmth-summary-icon {
+	color : #605CA8 !important;
+}
